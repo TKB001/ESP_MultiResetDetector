@@ -159,7 +159,7 @@ The best and easiest way is to use `Arduino Library Manager`. Search for `ESP_Mu
 How to use
 
 ```cpp
-// These defines must be put before #include <ESP_MultiResetDetector.h>
+// These defines must be put before #include <AF_ESP_MultiResetDetector.h>
 // to select where to store MultiResetDetector's variable.
 // For ESP32, You must select one to be true (EEPROM or SPIFFS)
 // For ESP8266, You must select one to be true (RTC, EEPROM, LITTLEFS or SPIFFS)
@@ -175,7 +175,7 @@ How to use
 
 #define MULTIRESETDETECTOR_DEBUG       true  //false
 
-// These definitions must be placed before #include <ESP_MultiResetDetector.h> to be used
+// These definitions must be placed before #include <AF_ESP_MultiResetDetector.h> to be used
 // Otherwise, default values (MRD_TIMES = 3, MRD_TIMEOUT = 10 seconds and MRD_ADDRESS = 0) will be used
 // Number of subsequent resets during MRD_TIMEOUT to activate
 #define MRD_TIMES               5
@@ -187,7 +187,7 @@ How to use
 // RTC/EEPROM Memory Address for the MultiResetDetector to use
 #define MRD_ADDRESS             0
 
-#include <ESP_MultiResetDetector.h>      //https://github.com/khoih-prog/ESP_MultiResetDetector
+#include <AF_ESP_MultiResetDetector.h>      //https://github.com/khoih-prog/ESP_MultiResetDetector
 
 MultiResetDetector* mrd;
 
